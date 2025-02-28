@@ -1,5 +1,7 @@
 volleyball-analysis-tool/
 ├── src/
+│   └──Video-player
+│   │   └── Video_player.py
 ├── docs/
 │   ├── uml/
 │   │   └── class-diagram.png
