@@ -1,0 +1,34 @@
+@startuml
+class GUI {
+  window: Window
+  loadButton: Button
+  playPauseButton: Button
+  slider: Slider
+  videoDisplay: Display
+  videoPlayer VideoPlayer
+  
+  __init__()
+  playPausePressed(): void
+  sliderClicked(): void
+  nextFramePressed(): void
+  previousFramePressed(): void
+  updateSlider():void
+
+
+}
+
+class VideoPlayer {
+  cap: VideoCapture
+  fps: int
+  frame_count: int
+  cur_frame: int
+  videoDisplay: Display
+
+  __init__(String path, videoDisplay: display)
+  play(): void
+  pause(): void
+  seekFrame(int number): void
+}
+
+GUI --> VideoPlayer: interacts with
+@enduml
