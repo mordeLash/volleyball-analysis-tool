@@ -18,7 +18,7 @@ class GUI {
 }
 
 class VideoPlayer {
-  cap: VideoCapture
+  cap: cv2.VideoCapture
   fps: int
   frame_count: int
   cur_frame: int
